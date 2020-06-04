@@ -1,1 +1,2 @@
 terminar resta
+parche restar negativos
