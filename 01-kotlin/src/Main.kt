@@ -110,16 +110,16 @@ val respuestaFilter: List<Int> =arregloCumpleanos
 
     arregloCumpleanos.forEach(
             {valorInteracion:Int->
-             print("\nValor interacion 3: " + valorInteracion)
+             println("\nValor interacion 3: " + valorInteracion)
             })
 
     arregloCumpleanos.
     forEachIndexed { index:Int, it:Int->
-        (print("valor de la interacion 4"+it))
+        (println("valor de la interacion 4"+it))
     }
     val respuestaArregloForEach=arregloCumpleanos.
     forEachIndexed { index:Int, it:Int->
-        print("valor de la interacion 4"+it)
+        println("valor de la interacion 4"+it)
     }
 //map hace camio al arreglo directamente.
     val respuestaMap=arregloCumpleanos.map{
@@ -149,15 +149,21 @@ val respuestaFilter: List<Int> =arregloCumpleanos
     arregloCumpleanos.filter {
         iteracion:Int->iteracion>23
     }
-    print("\n"+respuestaFilter1)
+    println("\n"+respuestaFilter1)
+
+
+    val nuevoNumeroUno = SumarDosNumerosDos(1, 1)
+    val nuevoNumeroDos = SumarDosNumerosDos(null, 1)
+    val nuevoNumeroTres = SumarDosNumerosDos(1, null)
+    val nuevoNumeroCuatro = SumarDosNumerosDos(null, null)
+
+    println(SumarDosNumerosDos.arregloNumero)
+    SumarDosNumerosDos.agregarNumero(1)
+    
 
 
 
-
-
-
-
-}
+}//cierre main
 
 
 
@@ -174,9 +180,6 @@ fun calcularSueldo(
     }
 }
 
-
-
-
 fun imprimirMensaje():Unit{//Unit es igual que poner void
     println("")
 }
@@ -191,22 +194,68 @@ abstract class NumerosJava{  // val nuevosNumeros = Numeros(1,2)
     }
 }
 abstract class Numeros( // val nuevosNumeros = Numeros(1,2)
-        protected val numeroUno:Int,
-        protected val numeroDos:Int
-){
+        protected var numeroUno: Int,
+        protected var numeroDos: Int
+) {
 }
 
-class  Suma(
-        val uno: Int,
-        val dos: Int
-):Numeros(uno,dos){
-    fun Suma():Int
-    {
-        return return this.numeroUno+this.numeroDos
+class Suma(
+        uno: Int, // Parametro
+        dos: Int // Parametro
+) : Numeros(uno, dos) {
+    fun sumar(): Int {
+        // this.uno o this.dos NO ESTAN DISPONIBLES
+        return this.numeroUno + this.numeroDos
+    }
+}
+
+class SumaDos(
+        uno: Int, // Propiedades
+        dos: Int // Propiedades
+) : Numeros(uno, dos) {
+
+    fun sumar(): Int {
+        return this.numeroUno + this.numeroDos
     }
 }
 
 
+class SumarDosNumerosDos(
+        uno:Int,
+        dos: Int
+):Numeros(uno, dos){
+    constructor(uno:Int?, dos:Int):this(
+            if (uno==null) 0 else uno,
+            dos
+    ){
+        println("Hola 1")
+    }
+    constructor(uno:Int, dos:Int?) : this (
+            uno,
+            if (dos == null) 0 else dos
+    ){
+        println("Hola 2")
+    }
+    constructor(uno: Int?, dos: Int?):this(
+            if(uno==null) 0 else uno,
+            if (dos==null) 0 else dos
+    ) {
+
+        println("Hola 3")
+    }
+    companion object{
+        val arregloNumero=arrayListOf(1,2,3,4)
+        fun agregarNumero(nuevoNumero:Int){
+            this.arregloNumero.add(nuevoNumero)
+        }
+        fun eliminarNumero(posicionNumero:Int){
+            this.arregloNumero.removeAt(posicionNumero)
+        }
+    }
+
+
+
+}
 
 
 
