@@ -1,9 +1,0 @@
-integrantes:
-David Carvajal
-David Moreno
-
-Historias de usuario link
-https://dev.azure.com/jonathancarvajal01/ProyectoFacturacion/_workitems/recentlyupdated/
-
-Prototipo Aplicacion Adobe XD\
-https://xd.adobe.com/view/7246d760-8678-4f22-9102-f0fc5aba06bd-2715/
