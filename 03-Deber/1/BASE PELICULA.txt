@@ -1,0 +1,5 @@
+Indice 0: [1, EL PROFESOR CHIFLADO, Sat Jan 01 00:00:00 COT 2000, 2] 
+Indice 1: [2, LEYENDAS DE PASION, Sat Jan 01 00:00:00 COT 2000, 2] 
+Indice 2: [3, BROTHERS, Sat Jan 01 00:00:00 COT 2000, 1] 
+Indice 3: [5, GREASE, Sat Jan 01 00:00:00 COT 2000, 1] 
+

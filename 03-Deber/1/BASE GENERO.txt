@@ -1,0 +1,5 @@
+Indice 0: [COMEDIA, 1] 
+Indice 1: [ANIME, 2] 
+Indice 2: [TERROR, 3] 
+Indice 3: [MUSICAL, 5] 
+
