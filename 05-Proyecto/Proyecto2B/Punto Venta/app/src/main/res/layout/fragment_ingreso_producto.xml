@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ingreso_producto.IngresoProductoFragment">
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIngresoProducto"
+        android:layout_width="213dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ingresar_productoBtn"
+        app:layout_constraintEnd_toEndOf="@+id/Ncantidad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CantidadProducto"
+        app:layout_constraintTop_toBottomOf="@+id/Ncantidad" />
+
+    <EditText
+        android:id="@+id/Nombre_Producto"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:hint="@string/nombre_producto"
+        android:inputType=""
+        app:layout_constraintEnd_toEndOf="@+id/CodProducto"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/CodProducto"
+        app:layout_constraintTop_toBottomOf="@+id/CodProducto" />
+
+    <EditText
+        android:id="@+id/CodProducto"
+        android:layout_width="188dp"
+        android:layout_height="45dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Codigo Producto"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/text_gallery"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/text_gallery"
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery" />
+
+    <TextView
+        android:id="@+id/PVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/precio_de_venta"
+        app:layout_constraintEnd_toStartOf="@+id/NPrecioVenta"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="@+id/Nombre_Producto"
+        app:layout_constraintTop_toBottomOf="@+id/Nombre_Producto" />
+
+    <TextView
+        android:id="@+id/PMayorista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Precio Proveedor"
+        app:layout_constraintEnd_toStartOf="@+id/NprecioProv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PVenta"
+        app:layout_constraintTop_toBottomOf="@+id/PVenta" />
+
+    <TextView
+        android:id="@+id/CantidadProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/cantidad_de_producto"
+        app:layout_constraintEnd_toStartOf="@+id/Ncantidad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtmarca"
+        app:layout_constraintTop_toBottomOf="@+id/txtmarca" />
+
+    <EditText
+        android:id="@+id/NPrecioVenta"
+        android:layout_width="71dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/NPrecioVenta"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/Nombre_Producto"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="@+id/Nombre_Producto"
+        app:layout_constraintTop_toBottomOf="@+id/Nombre_Producto" />
+
+    <EditText
+        android:id="@+id/NprecioProv"
+        android:layout_width="68dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/NprecioMay"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/NPrecioVenta"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/NPrecioVenta"
+        app:layout_constraintTop_toBottomOf="@+id/NPrecioVenta" />
+
+    <EditText
+        android:id="@+id/Ncantidad"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="$ 0.00"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmarca" />
+
+    <EditText
+        android:id="@+id/txtmarca"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="MARCA PRODUCTO"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/NprecioProv"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/PMayorista"
+        app:layout_constraintTop_toBottomOf="@+id/PMayorista" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

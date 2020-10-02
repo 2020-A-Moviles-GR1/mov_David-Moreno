@@ -3,7 +3,11 @@ package com.example.moviles
 import android.os.Parcel
 import android.os.Parcelable
 
-class Mascota(var nombre:String?, val duenio:Usuario?):Parcelable {
+// Mascota.kt
+class Mascota(
+    var nombre: String?,
+    val duenio: Usuario?
+):Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readParcelable(Usuario::class.java.classLoader)
@@ -28,6 +32,4 @@ class Mascota(var nombre:String?, val duenio:Usuario?):Parcelable {
             return arrayOfNulls(size)
         }
     }
-
-
 }

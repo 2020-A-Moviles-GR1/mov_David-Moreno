@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">GIZ-PIRIT</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="logo">Logo</string>
+
+
+    <string name="title_activity_barra__menu_">Barra_Menu_Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    //titulo superior de la hoja
+    <string name="menu_home">CAJA</string>
+    <string name="menu_ingreso">INGRESO DEL PRODUCTO</string>
+    <string name="menu_inventario">INVENTARIO DE PRODUCTOS</string>
+    <string name="menu_venta">VENTAS</string>
+    <string name="menu_busqueda">BUSQUEDA DE PRODUCTO</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    //ingreso de producto
+    <string name="ingresar_productoBtn">Ingresar Producto</string>
+    <string name="nombre_producto">Nombre del Producto</string>
+    <string name="codigo_de_barras">Codigo de Barras</string>
+    <string name="precio_de_venta">Precio de Venta:</string>
+    <string name="precio_de_mayorista">Precio de Mayorista:</string>
+    <string name="precio_de_compra">Precio de Compra:</string>
+    <string name="cantidad_de_producto">Cantidad de Producto</string>
+    //txt ingresos de datos de "ingreso producto"
+    <string name="marca_del_producto">Marca Del Producto</string>
+    <string name="NPrecioVenta">$ 0.00</string>
+    <string name="NprecioMay">$ 0.00</string>
+    <string name="NprecioCompra">$ 0.00</string>
+    <string name="Ncantidad">0000</string>
+
+
+    //registro de usuario
+    <string name="menu_agregar_usuario">AGREGAR USUARIO</string>
+    <string name="administrador_registro_usuario">ADMINISTRADOR</string>
+    <string name="vendedor__registro_usuario">VENDEDOR</string>
+    <string name="contrasenia_registro_usuario">CONTRASEÑA</string>
+    <string name="agregar_usuario_registro_usuario">AGREGAR USUARIO</string>
+    <string name="numero_celular_registro_usuario">NUMERO CELULAR</string>
+    <string name="correo_electronico_registro_usuario">CORREO ELECTRONICO</string>
+    <string name="otra_vez_la_contraseia_registro_usuario">OTRA VEZ LA CONTRASEÑA</string>
+    <string name="nombre_usuario_registro_usuario">NOMBRE USUARIO</string>
+
+</resources>

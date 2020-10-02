@@ -83,7 +83,6 @@ class CicloVida : AppCompatActivity() {
         if (valorRecuperado != null) {
             this.numeroActual = valorRecuperado
             tv_numero.text = this.numeroActual.toString()
-            println("numero recuperado: "+valorRecuperado)
         }
     }
 

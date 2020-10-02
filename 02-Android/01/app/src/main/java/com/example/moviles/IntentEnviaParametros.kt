@@ -27,24 +27,22 @@ class IntentEnviaParametros : AppCompatActivity() {
             Log.i("intents", "El texto es: ${textoCompartido}")
         }
 
-        val samm=intent.getParcelableExtra<Mascota>("sam")
-        if(samm != null){
-            Log.i("parcelable","${samm.nombre} ${samm.duenio?.nombre}")
+        val cachetes = intent.getParcelableExtra<Mascota>("cachetes")
+        if(cachetes != null){
+            Log.i("parcelable", "${cachetes.nombre} ${cachetes.duenio?.nombre}")
         }
 
-        val arregloMascotas=intent.getParcelableArrayListExtra<Mascota>("arregloMascotas")
+        val arregloMascotas = intent.getParcelableArrayListExtra<Mascota>("arregloMascotas")
         if(arregloMascotas != null){
             arregloMascotas.forEach {
                 if(it != null){
-                Log.i("parcelable", "En arreglo")
-                Log.i("parcelable", "${it.nombre} ${it.duenio?.nombre}")
+                    Log.i("parcelable", "EN ARREGLO")
+                    Log.i("parcelable", "${it.nombre} ${it.duenio?.nombre}")
+                }
+
             }
-        }
 
         }
-
-
-
 
         btn_devolver_respuesta
             .setOnClickListener {

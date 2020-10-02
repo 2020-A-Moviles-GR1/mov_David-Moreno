@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_caja"
+            android:icon="@drawable/ic_attach_money"
+            android:title="Caja" />
+        <item
+            android:id="@+id/nav_ingreso_producto"
+            android:icon="@drawable/ic_add_producto"
+            android:title="Ingreso Producto" />
+        <item
+            android:id="@+id/nav_agregar_usuario"
+            android:icon="@drawable/ic_person_add_black"
+            android:title="Agregar Usuario" />
+        <item
+            android:id="@+id/nav_agregar_cliente"
+            android:icon="@drawable/ic_attach_money"
+            android:title="Agregar Cliente" />
+        <item
+            android:id="@+id/nav_inventario"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Inventario" />
+
+        <item
+            android:id="@+id/nav_factura"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Factura" />
+        <item
+            android:id="@+id/nav_listaCliente"
+            android:icon="@drawable/ic_attach_money"
+            android:title="Consulta Clientes" />
+
+    </group>
+</menu>

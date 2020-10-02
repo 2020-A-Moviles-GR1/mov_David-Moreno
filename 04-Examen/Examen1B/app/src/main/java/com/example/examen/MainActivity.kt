@@ -85,7 +85,6 @@ class MainActivity : AppCompatActivity() {
         llenarLista(4,"Drama")
         llenarLista(5,"Animacion")
         contCodigo=5
-
     }
 
     private fun llenarLista(numero:Int, dato:String){

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.factura.DatosFacturaActivity">
+
+    <EditText
+        android:id="@+id/txtDireccionClienteFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="DIRECCIÓN DOMICILIO"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmailClienteFactura"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailClienteFactura"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailClienteFactura" />
+
+    <EditText
+        android:id="@+id/txtNombreClienteFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="NOMBRE CLIENTE"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtCiFacturaCliente"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtCiFacturaCliente"
+        app:layout_constraintTop_toBottomOf="@+id/txtCiFacturaCliente" />
+
+    <EditText
+        android:id="@+id/txtFechaCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="FECHA DE COMPRA"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTelefonoFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="TELÉFONO CLIENTE"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombreClienteFactura"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNombreClienteFactura"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreClienteFactura" />
+
+    <EditText
+        android:id="@+id/txtCiFacturaCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="CÉDULA DE IDENTIDAD"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txtFechaCompra"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtFechaCompra"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaCompra" />
+
+    <EditText
+        android:id="@+id/txtEmailClienteFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="CORREO ELECTRÓNICO"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/txtTelefonoFactura"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtTelefonoFactura"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefonoFactura" />
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="SIGUIENTE"
+        app:layout_constraintEnd_toEndOf="@+id/txtDireccionClienteFactura"
+        app:layout_constraintStart_toStartOf="@+id/txtDireccionClienteFactura"
+        app:layout_constraintTop_toBottomOf="@+id/txtDireccionClienteFactura" />
+
+    <Button
+        android:id="@+id/btnBuscarCi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUSCAR"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCiFacturaCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCiFacturaCliente"
+        app:layout_constraintTop_toTopOf="@+id/txtCiFacturaCliente" />
+</androidx.constraintlayout.widget.ConstraintLayout>

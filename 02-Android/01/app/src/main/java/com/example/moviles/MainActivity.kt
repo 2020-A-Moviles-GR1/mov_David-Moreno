@@ -39,8 +39,44 @@ class MainActivity : AppCompatActivity() {
                 enviarIntentConRespuestaPropia()
             }
 
+        btn_http.setOnClickListener {
+            abrirActividadHttp()
+        }
 
+        btn_recycler
+            .setOnClickListener {
+                abrirRecyclerViewActivity()
+            }
+        btn_mapa
+            .setOnClickListener {
+                abrirMapaActivity()
+            }
     }
+
+    fun abrirMapaActivity(){
+        val intentExplicito = Intent(
+            this,
+            MapsActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
+
+    fun abrirRecyclerViewActivity(){
+        val intentExplicito = Intent(
+            this,
+            RecyclerVIewActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
+
+    fun abrirActividadHttp() {
+        val intentExplicito = Intent(
+            this,
+            HttpActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
+
 
     fun enviarIntentConRespuestaPropia() {
         val intentExplicito = Intent(
@@ -93,7 +129,7 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                     305 -> {
-                        if (data!= null){
+                        if (data != null) {
                             val nombre = data.getStringExtra("nombre")
                             val edad = data.getIntExtra("edad", 0)
                             Log.i("resultado", "Nombre: ${nombre} Edad: ${edad}")
@@ -114,15 +150,23 @@ class MainActivity : AppCompatActivity() {
             IntentEnviaParametros::class.java
         )
         intentExplicito.putExtra("numero", 2)
-        val david=Usuario("David",28, Date(),1.0)
-        val samm=Mascota("Samm",david)
-        val arregloMascotas= arrayListOf<Mascota>(samm)
-        intentExplicito.putExtra("sam",samm)
+
+        val adrian = Usuario(
+            "Adrian",
+            31,
+            Date(),
+            1.0
+        )
+        val cachetes = Mascota(
+            "Cachetes",
+            adrian
+        )
+        val arregloMascotas = arrayListOf<Mascota>(cachetes)
+
+        intentExplicito.putExtra("cachetes", cachetes)
         intentExplicito.putExtra("arregloMascotas", arregloMascotas)
 
         startActivity(intentExplicito)
-
-
     }
 
     fun irListView() {
@@ -133,7 +177,6 @@ class MainActivity : AppCompatActivity() {
         // this.startActivity(intentExplicito)
         startActivity(intentExplicito)
     }
-
 
     fun irCicloDeVida() {
         val intentExplicito = Intent(

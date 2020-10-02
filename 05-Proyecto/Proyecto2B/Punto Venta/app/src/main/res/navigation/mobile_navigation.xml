@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_busqueda"
+    android:label="@string/"
+    app:startDestination="@+id/nav_caja">
+    //parte superior de los fragments ctrl+shif+f
+    <fragment
+
+        android:id="@+id/nav_caja"
+        android:name="com.example.johnny2.ui.caja.CajaFragment"
+        android:label="CAJA"
+        tools:layout="@layout/fragment_inicio">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.johnny2.ui.caja.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_caja" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ingreso_producto"
+        android:name="com.example.johnny2.ui.ingreso_producto.IngresoProductoFragment"
+        android:label="@string/menu_ingreso"
+        tools:layout="@layout/fragment_ingreso_producto" />
+
+    <fragment
+        android:id="@+id/nav_agregar_usuario"
+        android:name="com.example.johnny2.ui.agregar_usuario.AgregarusuarioFragment"
+        android:label="@string/menu_agregar_usuario"
+        tools:layout="@layout/fragment_agregarusuario" />
+    <activity
+        android:id="@+id/nav_factura"
+        android:name="com.example.johnny2.ui.factura.DatosFacturaActivity"
+        android:label="activity_datos_factura"
+        tools:layout="@layout/activity_datos_factura" />
+    <activity
+        android:id="@+id/nav_inventario"
+        android:name="com.example.johnny2.ui.inventario.InventariosActivity"
+        android:label="activity_inventarios"
+        tools:layout="@layout/activity_inventarios" />
+    <fragment
+        android:id="@+id/nav_agregar_cliente"
+        android:name="com.example.johnny2.ui.cliente.AgregarClienteFragment"
+        android:label="fragment_cliente"
+        tools:layout="@layout/fragment_cliente" />
+    <activity
+        android:id="@+id/nav_listaCliente"
+        android:name="com.example.johnny2.ui.cliente.ListaClienteActivity"
+        android:label="activity_lista_cliente"
+        tools:layout="@layout/activity_lista_cliente" />
+</navigation>
