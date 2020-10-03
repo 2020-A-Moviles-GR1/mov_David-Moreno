@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actualizarPelicula">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="ACTUALIZAR"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/plato_ha_actualizar"
+        android:layout_width="240dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Pelicula"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/precio_plato"
+        android:layout_width="83dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/plato_ha_actualizar"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="@+id/plato_ha_actualizar"
+        app:layout_constraintTop_toBottomOf="@+id/plato_ha_actualizar" />
+
+    <EditText
+        android:id="@+id/editTextLatitudActualizar"
+        android:layout_width="106dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Latitud"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precio_plato" />
+
+    <EditText
+        android:id="@+id/editTextLongitudActualizar"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Longitud"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="@+id/plato_ha_actualizar"
+        app:layout_constraintTop_toBottomOf="@+id/precio_plato" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLineurlReferencia"
+        android:layout_width="410dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Url"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLongitudActualizar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLongitudActualizar" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLineUrlImagen"
+        android:layout_width="406dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Url Imagen"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLineurlReferencia"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLineurlReferencia"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineurlReferencia" />
+
+    <Button
+        android:id="@+id/btn_ActualizarNuevoPlato"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Actualizar"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLineUrlImagen"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLineUrlImagen"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineUrlImagen" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PELICULAS</string>
+    <string name="title_activity_mapa_platos">Map</string>
+    <string name="title_activity_maps_restaurante">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_rest">Map</string>
+</resources>

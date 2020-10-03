@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregar_Pelicula">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="143dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Agregar"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nuevo_plato"
+        android:layout_width="294dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/valor_plato"
+        android:layout_width="93dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLongitudAgregar"
+        app:layout_constraintStart_toStartOf="@+id/editTextlatitudAgreagar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLongitudAgregar" />
+
+    <EditText
+        android:id="@+id/editTextlatitudAgreagar"
+        android:layout_width="81dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_weight="1"
+        android:hint="Latitud"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/nuevo_plato"
+        app:layout_constraintTop_toBottomOf="@+id/nuevo_plato" />
+
+    <EditText
+        android:id="@+id/editTextLongitudAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Longitud"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/nuevo_plato"
+        app:layout_constraintStart_toEndOf="@+id/editTextlatitudAgreagar"
+        app:layout_constraintTop_toBottomOf="@+id/nuevo_plato" />
+
+    <EditText
+        android:id="@+id/editTextUrlReferenciaAgregar"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:hint="Url Referenia"
+        android:inputType="textMultiLine"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/valor_plato"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/valor_plato"
+        app:layout_constraintTop_toBottomOf="@+id/valor_plato" />
+
+    <EditText
+        android:id="@+id/editTextUrlImagenAgregar"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:hint="Url Imagen"
+        android:inputType="textMultiLine"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUrlReferenciaAgregar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextUrlReferenciaAgregar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUrlReferenciaAgregar" />
+
+    <Button
+        android:id="@+id/btn_GuardarPlato"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUrlImagenAgregar"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="@+id/editTextUrlImagenAgregar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUrlImagenAgregar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
